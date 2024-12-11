@@ -10,7 +10,8 @@ namespace ASP.NET.Controllers
 
     public class HomeController : Controller
     {
-        ASPNETEntities objASP_NETEntities = new ASPNETEntities();
+        ASP_NETEntities objASP_NETEntities = new ASP_NETEntities();
+
         public ActionResult Index()
         {
             var lstProduct = objASP_NETEntities.Products.ToList();

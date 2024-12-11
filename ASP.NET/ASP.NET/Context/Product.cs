@@ -14,21 +14,20 @@ namespace ASP.NET.Context
     
     public partial class Product
     {
-        public int ProductID { get; set; }
-        public string ProductName { get; set; }
-        public string ShortDescription { get; set; }
-        public string FullDescription { get; set; }
-        public string ProductImage { get; set; }
-        public decimal Price { get; set; }
-        public int CategoryID { get; set; }
-        public int BrandID { get; set; }
-        public Nullable<System.DateTime> CreateAt { get; set; }
-        public string CreateBy { get; set; }
-        public Nullable<System.DateTime> UpdateAt { get; set; }
-        public string UpdateBy { get; set; }
-        public Nullable<bool> Status { get; set; }
-    
-        public virtual Brand Brand { get; set; }
-        public virtual Category Category { get; set; }
+        public int id { get; set; }
+        public Nullable<int> category_id { get; set; }
+        public Nullable<int> brand_id { get; set; }
+        public string product_name { get; set; }
+        public string short_description { get; set; }
+        public string long_description { get; set; }
+        public decimal price { get; set; }
+        public Nullable<decimal> special_price { get; set; }
+        public int quantity { get; set; }
+        public Nullable<decimal> discount { get; set; }
+        public string image { get; set; }
+        public string status { get; set; }
+        public string created_by { get; set; }
+        public Nullable<System.DateTime> created_at { get; set; }
+        public Nullable<System.DateTime> updated_at { get; set; }
     }
 }

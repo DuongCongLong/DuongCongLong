@@ -130,12 +130,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
-    <Compile Include="Context\Brand.cs">
-      <DependentUpon>dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Context\Category.cs">
-      <DependentUpon>dbModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Context\dbModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

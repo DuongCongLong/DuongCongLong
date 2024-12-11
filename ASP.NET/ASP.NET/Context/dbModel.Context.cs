@@ -13,10 +13,10 @@ namespace ASP.NET.Context
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ASPNETEntities : DbContext
+    public partial class ASP_NETEntities : DbContext
     {
-        public ASPNETEntities()
-            : base("name=ASPNETEntities")
+        public ASP_NETEntities()
+            : base("name=ASP_NETEntities")
         {
         }
     
@@ -25,8 +25,6 @@ namespace ASP.NET.Context
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Brand> Brands { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Product> Products { get; set; }
     }
 }

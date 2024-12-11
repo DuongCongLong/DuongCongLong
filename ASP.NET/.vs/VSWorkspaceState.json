@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\ASP.NET",
-    "\\ASP.NET\\Views",
-    "\\ASP.NET\\Views\\Product"
+    ""
   ],
-  "SelectedNode": "\\ASP.NET\\Views\\Product\\ProductDetail.cshtml",
+  "SelectedNode": "\\ASP.NET.sln",
   "PreviewInSolutionExplorer": false
 }

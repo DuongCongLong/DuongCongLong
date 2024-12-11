@@ -480,13 +480,13 @@
                 {
                     <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                         <div class="card card-sm card-product-grid">
-                            <a href="@Url.Action("ProductDetail", "Product", new { id = product.ProductID })" class="img-wrap">
-                                <img src="~/Content/images/items/@product.ProductImage" alt="@product.ProductName">
+                            <a href="@Url.Action("ProductDetail", "Product", new { id = product.id })" class="img-wrap">
+                                <img src="~/Content/images/items/@product.image" alt="@product.image">
                             </a>
                             <figcaption class="info-wrap">
-                                <a href="@Url.Action("ProductDetail", "Product", new { id = product.ProductID })" class="title">@product.ProductName</a>
+                                <a href="@Url.Action("ProductDetail", "Product", new { id = product.id })" class="title">@product.product_name</a>
                                 <div class="price mt-1">
-                                    @product.Price.ToString("C0", System.Globalization.CultureInfo.CreateSpecificCulture("vi-VN"))
+                                    @product.price.ToString("C0", System.Globalization.CultureInfo.CreateSpecificCulture("vi-VN"))
                                 </div> <!-- price-wrap.// -->
                             </figcaption>
                         </div>
@@ -594,6 +594,6 @@
     </section>
     <!-- ========================= SECTION SUBSCRIBE END// ========================= -->
     <!-- ========================= FOOTER ========================= -->
-
+   
 </body>
 </html>
